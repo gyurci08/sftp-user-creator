@@ -1,0 +1,16 @@
+C:\Users\gyurci08\OneDrive\Documents\Development\C#\sftp-user-creator\bin\Debug\net8.0-windows\sftp-user-creator.exe
+C:\Users\gyurci08\OneDrive\Documents\Development\C#\sftp-user-creator\bin\Debug\net8.0-windows\sftp-user-creator.deps.json
+C:\Users\gyurci08\OneDrive\Documents\Development\C#\sftp-user-creator\bin\Debug\net8.0-windows\sftp-user-creator.runtimeconfig.json
+C:\Users\gyurci08\OneDrive\Documents\Development\C#\sftp-user-creator\bin\Debug\net8.0-windows\sftp-user-creator.dll
+C:\Users\gyurci08\OneDrive\Documents\Development\C#\sftp-user-creator\bin\Debug\net8.0-windows\sftp-user-creator.pdb
+C:\Users\gyurci08\OneDrive\Documents\Development\C#\sftp-user-creator\obj\Debug\net8.0-windows\sftp_user_creator.Form1.resources
+C:\Users\gyurci08\OneDrive\Documents\Development\C#\sftp-user-creator\obj\Debug\net8.0-windows\sftp-user-creator.csproj.GenerateResource.cache
+C:\Users\gyurci08\OneDrive\Documents\Development\C#\sftp-user-creator\obj\Debug\net8.0-windows\sftp-user-creator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gyurci08\OneDrive\Documents\Development\C#\sftp-user-creator\obj\Debug\net8.0-windows\sftp-user-creator.AssemblyInfoInputs.cache
+C:\Users\gyurci08\OneDrive\Documents\Development\C#\sftp-user-creator\obj\Debug\net8.0-windows\sftp-user-creator.AssemblyInfo.cs
+C:\Users\gyurci08\OneDrive\Documents\Development\C#\sftp-user-creator\obj\Debug\net8.0-windows\sftp-user-creator.csproj.CoreCompileInputs.cache
+C:\Users\gyurci08\OneDrive\Documents\Development\C#\sftp-user-creator\obj\Debug\net8.0-windows\sftp-user-creator.dll
+C:\Users\gyurci08\OneDrive\Documents\Development\C#\sftp-user-creator\obj\Debug\net8.0-windows\refint\sftp-user-creator.dll
+C:\Users\gyurci08\OneDrive\Documents\Development\C#\sftp-user-creator\obj\Debug\net8.0-windows\sftp-user-creator.pdb
+C:\Users\gyurci08\OneDrive\Documents\Development\C#\sftp-user-creator\obj\Debug\net8.0-windows\sftp-user-creator.genruntimeconfig.cache
+C:\Users\gyurci08\OneDrive\Documents\Development\C#\sftp-user-creator\obj\Debug\net8.0-windows\ref\sftp-user-creator.dll
