@@ -141,7 +141,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;richTextBox1.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="la_user.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -168,7 +168,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;la_user.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="tb_username.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 28</value>
@@ -189,7 +189,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tb_username.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="la_group.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -216,7 +216,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;la_group.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="tb_group.Location" type="System.Drawing.Point, System.Drawing">
     <value>118, 28</value>
@@ -237,7 +237,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tb_group.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="la_host.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -264,7 +264,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;la_host.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="tb_host.Location" type="System.Drawing.Point, System.Drawing">
     <value>237, 28</value>
@@ -285,7 +285,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tb_host.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="la_publicKey.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -312,7 +312,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;la_publicKey.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="tb_publicKey.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 198</value>
@@ -333,7 +333,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tb_publicKey.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="la_home.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -360,7 +360,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;la_home.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="tb_home.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 82</value>
@@ -381,7 +381,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tb_home.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="la_directories.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -408,7 +408,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;la_directories.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="tb_directories.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 131</value>
@@ -429,7 +429,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tb_directories.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="bt_generate.Location" type="System.Drawing.Point, System.Drawing">
     <value>274, 242</value>
@@ -453,10 +453,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;bt_generate.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="bt_editDefaults.Location" type="System.Drawing.Point, System.Drawing">
-    <value>285, 310</value>
+    <value>12, 242</value>
   </data>
   <data name="bt_editDefaults.Size" type="System.Drawing.Size, System.Drawing">
     <value>112, 33</value>
@@ -477,13 +477,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;bt_editDefaults.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="la_author.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="la_author.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 242</value>
+    <value>284, 326</value>
   </data>
   <data name="la_author.Size" type="System.Drawing.Size, System.Drawing">
     <value>108, 15</value>
@@ -504,6 +504,34 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;la_author.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="bt_editHosts.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="bt_editHosts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 281</value>
+  </data>
+  <data name="bt_editHosts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 33</value>
+  </data>
+  <data name="bt_editHosts.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="bt_editHosts.Text" xml:space="preserve">
+    <value>Edit hosts</value>
+  </data>
+  <data name="&gt;&gt;bt_editHosts.Name" xml:space="preserve">
+    <value>bt_editHosts</value>
+  </data>
+  <data name="&gt;&gt;bt_editHosts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bt_editHosts.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;bt_editHosts.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

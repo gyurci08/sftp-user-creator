@@ -45,6 +45,7 @@
             bt_generate = new Button();
             bt_editDefaults = new Button();
             la_author = new Label();
+            bt_editHosts = new Button();
             SuspendLayout();
             // 
             // richTextBox1
@@ -130,10 +131,17 @@
             resources.ApplyResources(la_author, "la_author");
             la_author.Name = "la_author";
             // 
+            // bt_editHosts
+            // 
+            resources.ApplyResources(bt_editHosts, "bt_editHosts");
+            bt_editHosts.Name = "bt_editHosts";
+            bt_editHosts.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(bt_editHosts);
             Controls.Add(la_author);
             Controls.Add(bt_editDefaults);
             Controls.Add(bt_generate);
@@ -175,5 +183,6 @@
         private Button bt_generate;
         private Button bt_editDefaults;
         private Label la_author;
+        private Button bt_editHosts;
     }
 }
