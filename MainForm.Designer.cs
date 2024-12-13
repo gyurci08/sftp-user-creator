@@ -1,6 +1,6 @@
 ﻿namespace sftp_user_creator
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             richTextBox1 = new RichTextBox();
             la_user = new Label();
             tb_username = new TextBox();
@@ -48,140 +49,91 @@
             // 
             // richTextBox1
             // 
-            richTextBox1.Location = new Point(465, 28);
+            resources.ApplyResources(richTextBox1, "richTextBox1");
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(772, 399);
-            richTextBox1.TabIndex = 0;
-            richTextBox1.Text = "";
             // 
             // la_user
             // 
-            la_user.AutoSize = true;
-            la_user.Location = new Point(12, 10);
+            resources.ApplyResources(la_user, "la_user");
             la_user.Name = "la_user";
-            la_user.Size = new Size(60, 15);
-            la_user.TabIndex = 4;
-            la_user.Text = "Username";
             // 
             // tb_username
             // 
-            tb_username.Location = new Point(12, 28);
+            resources.ApplyResources(tb_username, "tb_username");
             tb_username.Name = "tb_username";
-            tb_username.Size = new Size(100, 23);
-            tb_username.TabIndex = 3;
             // 
             // la_group
             // 
-            la_group.AutoSize = true;
-            la_group.Location = new Point(118, 10);
+            resources.ApplyResources(la_group, "la_group");
             la_group.Name = "la_group";
-            la_group.Size = new Size(40, 15);
-            la_group.TabIndex = 6;
-            la_group.Text = "Group";
             // 
             // tb_group
             // 
-            tb_group.Location = new Point(118, 28);
+            resources.ApplyResources(tb_group, "tb_group");
             tb_group.Name = "tb_group";
-            tb_group.Size = new Size(100, 23);
-            tb_group.TabIndex = 5;
             // 
             // la_host
             // 
-            la_host.AutoSize = true;
-            la_host.Location = new Point(237, 10);
+            resources.ApplyResources(la_host, "la_host");
             la_host.Name = "la_host";
-            la_host.Size = new Size(32, 15);
-            la_host.TabIndex = 8;
-            la_host.Text = "Host";
             // 
             // tb_host
             // 
-            tb_host.Location = new Point(237, 28);
+            resources.ApplyResources(tb_host, "tb_host");
             tb_host.Name = "tb_host";
-            tb_host.Size = new Size(222, 23);
-            tb_host.TabIndex = 7;
             // 
             // la_publicKey
             // 
-            la_publicKey.AutoSize = true;
-            la_publicKey.Location = new Point(12, 180);
+            resources.ApplyResources(la_publicKey, "la_publicKey");
             la_publicKey.Name = "la_publicKey";
-            la_publicKey.Size = new Size(63, 15);
-            la_publicKey.TabIndex = 10;
-            la_publicKey.Text = "Public-key";
             // 
             // tb_publicKey
             // 
-            tb_publicKey.Location = new Point(12, 198);
+            resources.ApplyResources(tb_publicKey, "tb_publicKey");
             tb_publicKey.Name = "tb_publicKey";
-            tb_publicKey.Size = new Size(447, 23);
-            tb_publicKey.TabIndex = 9;
             // 
             // la_home
             // 
-            la_home.AutoSize = true;
-            la_home.Location = new Point(12, 64);
+            resources.ApplyResources(la_home, "la_home");
             la_home.Name = "la_home";
-            la_home.Size = new Size(40, 15);
-            la_home.TabIndex = 12;
-            la_home.Text = "Home";
             // 
             // tb_home
             // 
-            tb_home.Location = new Point(12, 82);
+            resources.ApplyResources(tb_home, "tb_home");
             tb_home.Name = "tb_home";
-            tb_home.Size = new Size(447, 23);
-            tb_home.TabIndex = 11;
             // 
             // la_directories
             // 
-            la_directories.AutoSize = true;
-            la_directories.Location = new Point(12, 113);
+            resources.ApplyResources(la_directories, "la_directories");
             la_directories.Name = "la_directories";
-            la_directories.Size = new Size(63, 15);
-            la_directories.TabIndex = 14;
-            la_directories.Text = "Directories";
             // 
             // tb_directories
             // 
-            tb_directories.Location = new Point(12, 131);
+            resources.ApplyResources(tb_directories, "tb_directories");
             tb_directories.Name = "tb_directories";
-            tb_directories.Size = new Size(206, 23);
-            tb_directories.TabIndex = 13;
             // 
             // bt_generate
             // 
-            bt_generate.Location = new Point(274, 242);
+            resources.ApplyResources(bt_generate, "bt_generate");
             bt_generate.Name = "bt_generate";
-            bt_generate.Size = new Size(135, 62);
-            bt_generate.TabIndex = 15;
-            bt_generate.Text = "Generate";
             bt_generate.UseVisualStyleBackColor = true;
+            bt_generate.Click += bt_generate_Click;
             // 
             // bt_editDefaults
             // 
-            bt_editDefaults.Location = new Point(285, 310);
+            resources.ApplyResources(bt_editDefaults, "bt_editDefaults");
             bt_editDefaults.Name = "bt_editDefaults";
-            bt_editDefaults.Size = new Size(112, 33);
-            bt_editDefaults.TabIndex = 16;
-            bt_editDefaults.Text = "Edit defaults";
             bt_editDefaults.UseVisualStyleBackColor = true;
             // 
             // la_author
             // 
-            la_author.AutoSize = true;
-            la_author.Location = new Point(12, 242);
+            resources.ApplyResources(la_author, "la_author");
             la_author.Name = "la_author";
-            la_author.Size = new Size(108, 15);
-            la_author.TabIndex = 17;
-            la_author.Text = "By: György Jandzsó";
             // 
-            // Form1
+            // MainForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1249, 446);
             Controls.Add(la_author);
             Controls.Add(bt_editDefaults);
             Controls.Add(bt_generate);
@@ -200,8 +152,7 @@
             Controls.Add(richTextBox1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
-            Name = "Form1";
-            Text = "Form1";
+            Name = "MainForm";
             ResumeLayout(false);
             PerformLayout();
         }
