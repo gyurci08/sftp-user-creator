@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             richTextBox1 = new RichTextBox();
-            label1 = new Label();
-            textBox2 = new TextBox();
-            label2 = new Label();
-            textBox1 = new TextBox();
+            la_user = new Label();
+            tb_username = new TextBox();
+            la_group = new Label();
+            tb_group = new TextBox();
             la_host = new Label();
-            textBox3 = new TextBox();
-            label3 = new Label();
-            textBox4 = new TextBox();
-            label4 = new Label();
-            textBox5 = new TextBox();
-            label5 = new Label();
-            textBox6 = new TextBox();
+            tb_host = new TextBox();
+            la_publicKey = new Label();
+            tb_publicKey = new TextBox();
+            la_home = new Label();
+            tb_home = new TextBox();
+            la_directories = new Label();
+            tb_directories = new TextBox();
             bt_generate = new Button();
             bt_editDefaults = new Button();
-            label6 = new Label();
+            la_author = new Label();
             SuspendLayout();
             // 
             // richTextBox1
@@ -54,37 +54,37 @@
             richTextBox1.TabIndex = 0;
             richTextBox1.Text = "";
             // 
-            // label1
+            // la_user
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(12, 10);
-            label1.Name = "label1";
-            label1.Size = new Size(60, 15);
-            label1.TabIndex = 4;
-            label1.Text = "Username";
+            la_user.AutoSize = true;
+            la_user.Location = new Point(12, 10);
+            la_user.Name = "la_user";
+            la_user.Size = new Size(60, 15);
+            la_user.TabIndex = 4;
+            la_user.Text = "Username";
             // 
-            // textBox2
+            // tb_username
             // 
-            textBox2.Location = new Point(12, 28);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 3;
+            tb_username.Location = new Point(12, 28);
+            tb_username.Name = "tb_username";
+            tb_username.Size = new Size(100, 23);
+            tb_username.TabIndex = 3;
             // 
-            // label2
+            // la_group
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(118, 10);
-            label2.Name = "label2";
-            label2.Size = new Size(40, 15);
-            label2.TabIndex = 6;
-            label2.Text = "Group";
+            la_group.AutoSize = true;
+            la_group.Location = new Point(118, 10);
+            la_group.Name = "la_group";
+            la_group.Size = new Size(40, 15);
+            la_group.TabIndex = 6;
+            la_group.Text = "Group";
             // 
-            // textBox1
+            // tb_group
             // 
-            textBox1.Location = new Point(118, 28);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 5;
+            tb_group.Location = new Point(118, 28);
+            tb_group.Name = "tb_group";
+            tb_group.Size = new Size(100, 23);
+            tb_group.TabIndex = 5;
             // 
             // la_host
             // 
@@ -95,60 +95,60 @@
             la_host.TabIndex = 8;
             la_host.Text = "Host";
             // 
-            // textBox3
+            // tb_host
             // 
-            textBox3.Location = new Point(237, 28);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(222, 23);
-            textBox3.TabIndex = 7;
+            tb_host.Location = new Point(237, 28);
+            tb_host.Name = "tb_host";
+            tb_host.Size = new Size(222, 23);
+            tb_host.TabIndex = 7;
             // 
-            // label3
+            // la_publicKey
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(12, 180);
-            label3.Name = "label3";
-            label3.Size = new Size(63, 15);
-            label3.TabIndex = 10;
-            label3.Text = "Public-key";
+            la_publicKey.AutoSize = true;
+            la_publicKey.Location = new Point(12, 180);
+            la_publicKey.Name = "la_publicKey";
+            la_publicKey.Size = new Size(63, 15);
+            la_publicKey.TabIndex = 10;
+            la_publicKey.Text = "Public-key";
             // 
-            // textBox4
+            // tb_publicKey
             // 
-            textBox4.Location = new Point(12, 198);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(447, 23);
-            textBox4.TabIndex = 9;
+            tb_publicKey.Location = new Point(12, 198);
+            tb_publicKey.Name = "tb_publicKey";
+            tb_publicKey.Size = new Size(447, 23);
+            tb_publicKey.TabIndex = 9;
             // 
-            // label4
+            // la_home
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(12, 64);
-            label4.Name = "label4";
-            label4.Size = new Size(40, 15);
-            label4.TabIndex = 12;
-            label4.Text = "Home";
+            la_home.AutoSize = true;
+            la_home.Location = new Point(12, 64);
+            la_home.Name = "la_home";
+            la_home.Size = new Size(40, 15);
+            la_home.TabIndex = 12;
+            la_home.Text = "Home";
             // 
-            // textBox5
+            // tb_home
             // 
-            textBox5.Location = new Point(12, 82);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(447, 23);
-            textBox5.TabIndex = 11;
+            tb_home.Location = new Point(12, 82);
+            tb_home.Name = "tb_home";
+            tb_home.Size = new Size(447, 23);
+            tb_home.TabIndex = 11;
             // 
-            // label5
+            // la_directories
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(12, 113);
-            label5.Name = "label5";
-            label5.Size = new Size(63, 15);
-            label5.TabIndex = 14;
-            label5.Text = "Directories";
+            la_directories.AutoSize = true;
+            la_directories.Location = new Point(12, 113);
+            la_directories.Name = "la_directories";
+            la_directories.Size = new Size(63, 15);
+            la_directories.TabIndex = 14;
+            la_directories.Text = "Directories";
             // 
-            // textBox6
+            // tb_directories
             // 
-            textBox6.Location = new Point(12, 131);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(206, 23);
-            textBox6.TabIndex = 13;
+            tb_directories.Location = new Point(12, 131);
+            tb_directories.Name = "tb_directories";
+            tb_directories.Size = new Size(206, 23);
+            tb_directories.TabIndex = 13;
             // 
             // bt_generate
             // 
@@ -168,35 +168,35 @@
             bt_editDefaults.Text = "Edit defaults";
             bt_editDefaults.UseVisualStyleBackColor = true;
             // 
-            // label6
+            // la_author
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(12, 242);
-            label6.Name = "label6";
-            label6.Size = new Size(108, 15);
-            label6.TabIndex = 17;
-            label6.Text = "By: György Jandzsó";
+            la_author.AutoSize = true;
+            la_author.Location = new Point(12, 242);
+            la_author.Name = "la_author";
+            la_author.Size = new Size(108, 15);
+            la_author.TabIndex = 17;
+            la_author.Text = "By: György Jandzsó";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1249, 446);
-            Controls.Add(label6);
+            Controls.Add(la_author);
             Controls.Add(bt_editDefaults);
             Controls.Add(bt_generate);
-            Controls.Add(label5);
-            Controls.Add(textBox6);
-            Controls.Add(label4);
-            Controls.Add(textBox5);
-            Controls.Add(label3);
-            Controls.Add(textBox4);
+            Controls.Add(la_directories);
+            Controls.Add(tb_directories);
+            Controls.Add(la_home);
+            Controls.Add(tb_home);
+            Controls.Add(la_publicKey);
+            Controls.Add(tb_publicKey);
             Controls.Add(la_host);
-            Controls.Add(textBox3);
-            Controls.Add(label2);
-            Controls.Add(textBox1);
-            Controls.Add(label1);
-            Controls.Add(textBox2);
+            Controls.Add(tb_host);
+            Controls.Add(la_group);
+            Controls.Add(tb_group);
+            Controls.Add(la_user);
+            Controls.Add(tb_username);
             Controls.Add(richTextBox1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
@@ -209,20 +209,20 @@
         #endregion
 
         private RichTextBox richTextBox1;
-        private Label label1;
-        private TextBox textBox2;
-        private Label label2;
-        private TextBox textBox1;
+        private Label la_user;
+        private TextBox tb_username;
+        private Label la_group;
+        private TextBox tb_group;
         private Label la_host;
-        private TextBox textBox3;
-        private Label label3;
-        private TextBox textBox4;
-        private Label label4;
-        private TextBox textBox5;
-        private Label label5;
-        private TextBox textBox6;
+        private TextBox tb_host;
+        private Label la_publicKey;
+        private TextBox tb_publicKey;
+        private Label la_home;
+        private TextBox tb_home;
+        private Label la_directories;
+        private TextBox tb_directories;
         private Button bt_generate;
         private Button bt_editDefaults;
-        private Label label6;
+        private Label la_author;
     }
 }
