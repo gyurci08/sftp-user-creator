@@ -1,0 +1,3 @@
+group=sapsys
+home=/usr/home/
+public_keys_dir=/usr/home/

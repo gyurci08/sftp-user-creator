@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "0OaMiGncNcw4kF/xpr5XlYOIaVaPOjCN7PP0cWYwhEL9/PaanuaarI0Jc5n7/Zc1AI4v5xz5gMbx2RrKpycv/g==",
+  "dgSpecHash": "sy0i+6GqjdyTNb2Maln8xdRQLStoPh8AMf2KNMBcPYLuaGBXWZFgxvUSvvkLZNJ1iUO4qCKgnaZkHLDzxHJJJg==",
   "success": true,
   "projectFilePath": "C:\\Users\\gyurci08\\OneDrive\\Documents\\Development\\C#\\sftp-user-creator\\sftp-user-creator.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\gyurci08\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.0\\microsoft.extensions.dependencyinjection.9.0.0.nupkg.sha512",
+    "C:\\Users\\gyurci08\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.0\\microsoft.extensions.dependencyinjection.abstractions.9.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

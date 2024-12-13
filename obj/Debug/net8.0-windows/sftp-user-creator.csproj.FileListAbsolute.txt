@@ -14,3 +14,7 @@ C:\Users\gyurci08\OneDrive\Documents\Development\C#\sftp-user-creator\obj\Debug\
 C:\Users\gyurci08\OneDrive\Documents\Development\C#\sftp-user-creator\obj\Debug\net8.0-windows\sftp-user-creator.genruntimeconfig.cache
 C:\Users\gyurci08\OneDrive\Documents\Development\C#\sftp-user-creator\obj\Debug\net8.0-windows\ref\sftp-user-creator.dll
 C:\Users\gyurci08\OneDrive\Documents\Development\C#\sftp-user-creator\obj\Debug\net8.0-windows\sftp_user_creator.MainForm.resources
+C:\Users\gyurci08\OneDrive\Documents\Development\C#\sftp-user-creator\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\gyurci08\OneDrive\Documents\Development\C#\sftp-user-creator\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\gyurci08\OneDrive\Documents\Development\C#\sftp-user-creator\obj\Debug\net8.0-windows\sftp-user-creator.csproj.AssemblyReference.cache
+C:\Users\gyurci08\OneDrive\Documents\Development\C#\sftp-user-creator\obj\Debug\net8.0-windows\sftp-use.C4ECF440.Up2Date

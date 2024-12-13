@@ -35,7 +35,7 @@
             la_group = new Label();
             tb_group = new TextBox();
             la_host = new Label();
-            tb_host = new TextBox();
+            tb_hostname = new TextBox();
             la_publicKey = new Label();
             tb_publicKey = new TextBox();
             la_home = new Label();
@@ -43,9 +43,12 @@
             la_directories = new Label();
             tb_directories = new TextBox();
             bt_generate = new Button();
-            bt_editDefaults = new Button();
             la_author = new Label();
-            bt_editHosts = new Button();
+            bt_openSettings = new Button();
+            la_publicKeyPath = new Label();
+            tb_publicKeyPath = new TextBox();
+            tb_foundHost = new TextBox();
+            la_hostFound = new Label();
             SuspendLayout();
             // 
             // richTextBox1
@@ -78,10 +81,11 @@
             resources.ApplyResources(la_host, "la_host");
             la_host.Name = "la_host";
             // 
-            // tb_host
+            // tb_hostname
             // 
-            resources.ApplyResources(tb_host, "tb_host");
-            tb_host.Name = "tb_host";
+            resources.ApplyResources(tb_hostname, "tb_hostname");
+            tb_hostname.Name = "tb_hostname";
+            tb_hostname.TextChanged += tb_hostname_TextChanged;
             // 
             // la_publicKey
             // 
@@ -120,30 +124,49 @@
             bt_generate.UseVisualStyleBackColor = true;
             bt_generate.Click += bt_generate_Click;
             // 
-            // bt_editDefaults
-            // 
-            resources.ApplyResources(bt_editDefaults, "bt_editDefaults");
-            bt_editDefaults.Name = "bt_editDefaults";
-            bt_editDefaults.UseVisualStyleBackColor = true;
-            // 
             // la_author
             // 
             resources.ApplyResources(la_author, "la_author");
             la_author.Name = "la_author";
             // 
-            // bt_editHosts
+            // bt_openSettings
             // 
-            resources.ApplyResources(bt_editHosts, "bt_editHosts");
-            bt_editHosts.Name = "bt_editHosts";
-            bt_editHosts.UseVisualStyleBackColor = true;
+            resources.ApplyResources(bt_openSettings, "bt_openSettings");
+            bt_openSettings.Name = "bt_openSettings";
+            bt_openSettings.UseVisualStyleBackColor = true;
+            bt_openSettings.Click += bt_openSettings_Click;
+            // 
+            // la_publicKeyPath
+            // 
+            resources.ApplyResources(la_publicKeyPath, "la_publicKeyPath");
+            la_publicKeyPath.Name = "la_publicKeyPath";
+            // 
+            // tb_publicKeyPath
+            // 
+            resources.ApplyResources(tb_publicKeyPath, "tb_publicKeyPath");
+            tb_publicKeyPath.Name = "tb_publicKeyPath";
+            // 
+            // tb_foundHost
+            // 
+            resources.ApplyResources(tb_foundHost, "tb_foundHost");
+            tb_foundHost.Name = "tb_foundHost";
+            tb_foundHost.ReadOnly = true;
+            // 
+            // la_hostFound
+            // 
+            resources.ApplyResources(la_hostFound, "la_hostFound");
+            la_hostFound.Name = "la_hostFound";
             // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(bt_editHosts);
+            Controls.Add(la_hostFound);
+            Controls.Add(tb_foundHost);
+            Controls.Add(la_publicKeyPath);
+            Controls.Add(tb_publicKeyPath);
+            Controls.Add(bt_openSettings);
             Controls.Add(la_author);
-            Controls.Add(bt_editDefaults);
             Controls.Add(bt_generate);
             Controls.Add(la_directories);
             Controls.Add(tb_directories);
@@ -152,7 +175,7 @@
             Controls.Add(la_publicKey);
             Controls.Add(tb_publicKey);
             Controls.Add(la_host);
-            Controls.Add(tb_host);
+            Controls.Add(tb_hostname);
             Controls.Add(la_group);
             Controls.Add(tb_group);
             Controls.Add(la_user);
@@ -173,7 +196,7 @@
         private Label la_group;
         private TextBox tb_group;
         private Label la_host;
-        private TextBox tb_host;
+        private TextBox tb_hostname;
         private Label la_publicKey;
         private TextBox tb_publicKey;
         private Label la_home;
@@ -181,8 +204,11 @@
         private Label la_directories;
         private TextBox tb_directories;
         private Button bt_generate;
-        private Button bt_editDefaults;
         private Label la_author;
-        private Button bt_editHosts;
+        private Button bt_openSettings;
+        private Label la_publicKeyPath;
+        private TextBox tb_publicKeyPath;
+        private TextBox tb_foundHost;
+        private Label la_hostFound;
     }
 }

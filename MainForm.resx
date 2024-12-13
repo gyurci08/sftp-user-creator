@@ -141,7 +141,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;richTextBox1.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>19</value>
   </data>
   <data name="la_user.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -168,7 +168,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;la_user.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>17</value>
   </data>
   <data name="tb_username.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 28</value>
@@ -189,7 +189,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tb_username.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>18</value>
   </data>
   <data name="la_group.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -216,7 +216,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;la_group.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>15</value>
   </data>
   <data name="tb_group.Location" type="System.Drawing.Point, System.Drawing">
     <value>118, 28</value>
@@ -237,7 +237,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tb_group.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>16</value>
   </data>
   <data name="la_host.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -264,34 +264,34 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;la_host.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>13</value>
   </data>
-  <data name="tb_host.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="tb_hostname.Location" type="System.Drawing.Point, System.Drawing">
     <value>237, 28</value>
   </data>
-  <data name="tb_host.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="tb_hostname.Size" type="System.Drawing.Size, System.Drawing">
     <value>222, 23</value>
   </data>
-  <data name="tb_host.TabIndex" type="System.Int32, mscorlib">
+  <data name="tb_hostname.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="&gt;&gt;tb_host.Name" xml:space="preserve">
-    <value>tb_host</value>
+  <data name="&gt;&gt;tb_hostname.Name" xml:space="preserve">
+    <value>tb_hostname</value>
   </data>
-  <data name="&gt;&gt;tb_host.Type" xml:space="preserve">
+  <data name="&gt;&gt;tb_hostname.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tb_host.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tb_hostname.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;tb_host.ZOrder" xml:space="preserve">
-    <value>11</value>
+  <data name="&gt;&gt;tb_hostname.ZOrder" xml:space="preserve">
+    <value>14</value>
   </data>
   <data name="la_publicKey.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="la_publicKey.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 180</value>
+    <value>12, 197</value>
   </data>
   <data name="la_publicKey.Size" type="System.Drawing.Size, System.Drawing">
     <value>63, 15</value>
@@ -312,10 +312,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;la_publicKey.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>11</value>
   </data>
   <data name="tb_publicKey.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 198</value>
+    <value>12, 215</value>
   </data>
   <data name="tb_publicKey.Size" type="System.Drawing.Size, System.Drawing">
     <value>447, 23</value>
@@ -333,22 +333,22 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tb_publicKey.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>12</value>
   </data>
   <data name="la_home.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="la_home.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 64</value>
+    <value>12, 81</value>
   </data>
   <data name="la_home.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 15</value>
+    <value>67, 15</value>
   </data>
   <data name="la_home.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
   <data name="la_home.Text" xml:space="preserve">
-    <value>Home</value>
+    <value>Home path</value>
   </data>
   <data name="&gt;&gt;la_home.Name" xml:space="preserve">
     <value>la_home</value>
@@ -360,10 +360,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;la_home.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>9</value>
   </data>
   <data name="tb_home.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 82</value>
+    <value>12, 99</value>
   </data>
   <data name="tb_home.Size" type="System.Drawing.Size, System.Drawing">
     <value>447, 23</value>
@@ -381,13 +381,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tb_home.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>10</value>
   </data>
   <data name="la_directories.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="la_directories.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 113</value>
+    <value>12, 130</value>
   </data>
   <data name="la_directories.Size" type="System.Drawing.Size, System.Drawing">
     <value>63, 15</value>
@@ -408,10 +408,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;la_directories.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>7</value>
   </data>
   <data name="tb_directories.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 131</value>
+    <value>12, 148</value>
   </data>
   <data name="tb_directories.Size" type="System.Drawing.Size, System.Drawing">
     <value>206, 23</value>
@@ -429,10 +429,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;tb_directories.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>8</value>
   </data>
   <data name="bt_generate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>274, 242</value>
+    <value>274, 318</value>
   </data>
   <data name="bt_generate.Size" type="System.Drawing.Size, System.Drawing">
     <value>135, 62</value>
@@ -453,37 +453,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;bt_generate.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="bt_editDefaults.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 242</value>
-  </data>
-  <data name="bt_editDefaults.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 33</value>
-  </data>
-  <data name="bt_editDefaults.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="bt_editDefaults.Text" xml:space="preserve">
-    <value>Edit defaults</value>
-  </data>
-  <data name="&gt;&gt;bt_editDefaults.Name" xml:space="preserve">
-    <value>bt_editDefaults</value>
-  </data>
-  <data name="&gt;&gt;bt_editDefaults.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bt_editDefaults.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;bt_editDefaults.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>6</value>
   </data>
   <data name="la_author.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="la_author.Location" type="System.Drawing.Point, System.Drawing">
-    <value>284, 326</value>
+    <value>287, 387</value>
   </data>
   <data name="la_author.Size" type="System.Drawing.Size, System.Drawing">
     <value>108, 15</value>
@@ -504,34 +480,136 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;la_author.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>5</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="bt_editHosts.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="bt_openSettings.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="bt_editHosts.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 281</value>
+  <data name="bt_openSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 333</value>
   </data>
-  <data name="bt_editHosts.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 33</value>
+  <data name="bt_openSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 33</value>
   </data>
-  <data name="bt_editHosts.TabIndex" type="System.Int32, mscorlib">
+  <data name="bt_openSettings.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
   </data>
-  <data name="bt_editHosts.Text" xml:space="preserve">
-    <value>Edit hosts</value>
+  <data name="bt_openSettings.Text" xml:space="preserve">
+    <value>Go to settings</value>
   </data>
-  <data name="&gt;&gt;bt_editHosts.Name" xml:space="preserve">
-    <value>bt_editHosts</value>
+  <data name="&gt;&gt;bt_openSettings.Name" xml:space="preserve">
+    <value>bt_openSettings</value>
   </data>
-  <data name="&gt;&gt;bt_editHosts.Type" xml:space="preserve">
+  <data name="&gt;&gt;bt_openSettings.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;bt_editHosts.Parent" xml:space="preserve">
+  <data name="&gt;&gt;bt_openSettings.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;bt_editHosts.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;bt_openSettings.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="la_publicKeyPath.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="la_publicKeyPath.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="la_publicKeyPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 244</value>
+  </data>
+  <data name="la_publicKeyPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 15</value>
+  </data>
+  <data name="la_publicKeyPath.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="la_publicKeyPath.Text" xml:space="preserve">
+    <value>Public-key path</value>
+  </data>
+  <data name="&gt;&gt;la_publicKeyPath.Name" xml:space="preserve">
+    <value>la_publicKeyPath</value>
+  </data>
+  <data name="&gt;&gt;la_publicKeyPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;la_publicKeyPath.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;la_publicKeyPath.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tb_publicKeyPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 262</value>
+  </data>
+  <data name="tb_publicKeyPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>447, 23</value>
+  </data>
+  <data name="tb_publicKeyPath.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;tb_publicKeyPath.Name" xml:space="preserve">
+    <value>tb_publicKeyPath</value>
+  </data>
+  <data name="&gt;&gt;tb_publicKeyPath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_publicKeyPath.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tb_publicKeyPath.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tb_foundHost.Location" type="System.Drawing.Point, System.Drawing">
+    <value>237, 70</value>
+  </data>
+  <data name="tb_foundHost.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 23</value>
+  </data>
+  <data name="tb_foundHost.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;tb_foundHost.Name" xml:space="preserve">
+    <value>tb_foundHost</value>
+  </data>
+  <data name="&gt;&gt;tb_foundHost.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tb_foundHost.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tb_foundHost.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="la_hostFound.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="la_hostFound.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="la_hostFound.Location" type="System.Drawing.Point, System.Drawing">
+    <value>237, 54</value>
+  </data>
+  <data name="la_hostFound.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 15</value>
+  </data>
+  <data name="la_hostFound.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="la_hostFound.Text" xml:space="preserve">
+    <value>Found host</value>
+  </data>
+  <data name="&gt;&gt;la_hostFound.Name" xml:space="preserve">
+    <value>la_hostFound</value>
+  </data>
+  <data name="&gt;&gt;la_hostFound.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;la_hostFound.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;la_hostFound.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
