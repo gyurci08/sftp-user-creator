@@ -41,16 +41,16 @@
             textBox5 = new TextBox();
             label5 = new Label();
             textBox6 = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
+            bt_generate = new Button();
+            bt_editDefaults = new Button();
             label6 = new Label();
             SuspendLayout();
             // 
             // richTextBox1
             // 
-            richTextBox1.Location = new Point(465, 7);
+            richTextBox1.Location = new Point(465, 28);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(772, 427);
+            richTextBox1.Size = new Size(772, 399);
             richTextBox1.TabIndex = 0;
             richTextBox1.Text = "";
             // 
@@ -150,28 +150,28 @@
             textBox6.Size = new Size(206, 23);
             textBox6.TabIndex = 13;
             // 
-            // button1
+            // bt_generate
             // 
-            button1.Location = new Point(324, 242);
-            button1.Name = "button1";
-            button1.Size = new Size(135, 62);
-            button1.TabIndex = 15;
-            button1.Text = "Generate";
-            button1.UseVisualStyleBackColor = true;
+            bt_generate.Location = new Point(274, 242);
+            bt_generate.Name = "bt_generate";
+            bt_generate.Size = new Size(135, 62);
+            bt_generate.TabIndex = 15;
+            bt_generate.Text = "Generate";
+            bt_generate.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // bt_editDefaults
             // 
-            button2.Location = new Point(12, 242);
-            button2.Name = "button2";
-            button2.Size = new Size(112, 33);
-            button2.TabIndex = 16;
-            button2.Text = "Edit defaults";
-            button2.UseVisualStyleBackColor = true;
+            bt_editDefaults.Location = new Point(285, 310);
+            bt_editDefaults.Name = "bt_editDefaults";
+            bt_editDefaults.Size = new Size(112, 33);
+            bt_editDefaults.TabIndex = 16;
+            bt_editDefaults.Text = "Edit defaults";
+            bt_editDefaults.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(340, 307);
+            label6.Location = new Point(12, 242);
             label6.Name = "label6";
             label6.Size = new Size(108, 15);
             label6.TabIndex = 17;
@@ -183,8 +183,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1249, 446);
             Controls.Add(label6);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(bt_editDefaults);
+            Controls.Add(bt_generate);
             Controls.Add(label5);
             Controls.Add(textBox6);
             Controls.Add(label4);
@@ -198,9 +198,10 @@
             Controls.Add(label1);
             Controls.Add(textBox2);
             Controls.Add(richTextBox1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
             Name = "Form1";
             Text = "Form1";
-            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -220,8 +221,8 @@
         private TextBox textBox5;
         private Label label5;
         private TextBox textBox6;
-        private Button button1;
-        private Button button2;
+        private Button bt_generate;
+        private Button bt_editDefaults;
         private Label label6;
     }
 }
