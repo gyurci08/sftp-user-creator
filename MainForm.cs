@@ -1,5 +1,9 @@
 using sftp_user_creator.config;
+using sftp_user_creator.utils;
+using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace sftp_user_creator
 {
@@ -67,7 +71,7 @@ namespace sftp_user_creator
 
 
         bool isHostFound = false;
-
+        private string host;
 
 
 
@@ -118,7 +122,7 @@ namespace sftp_user_creator
 
         private void DisplaySearchResult(string result)
         {
-            tb_foundHost.Text = result;
+            host = tb_foundHost.Text = result;
         }
 
 
@@ -135,11 +139,54 @@ namespace sftp_user_creator
         }
 
 
+
+
+
+
+
+   
+
+
+
         private void bt_generate_Click(object sender, EventArgs e)
         {
+            if(!(string.IsNullOrWhiteSpace(tb_username.Text) | string.IsNullOrWhiteSpace(tb_group.Text)| string.IsNullOrWhiteSpace(tb_home.Text)| string.IsNullOrWhiteSpace(tb_hostname.Text)))
+            {
+                var passwordGenerator = new PasswordGenerator();
+                var sftpUserGenerator = new SftpUserGenerator();
+                string commands = sftpUserGenerator.GenerateCommands(
+                    username: tb_username.Text,
+                    group: tb_group.Text,
+                    password: passwordGenerator.Generate(15, 2),
+                    homePath: tb_home.Text,
+                    subdirectories: tb_directories.Text.Replace(';',',').Split(","),
+                    sshKey: tb_publicKey.Text,
+                    sshKeyPath: tb_publicKeyPath.Text
+                );
+
+                if (!isHostFound) {
+                    host = tb_hostname.Text;
+                }
+
+
+                string header = $"""
+                ######################################
+                # System: {host}
+                """;
+
+                rtb_commands.Clear();
+                rtb_commands.AppendText(header + "\n");
+                rtb_commands.AppendText(string.Join("\n", commands));
+
+            }
+            else
+                MessageBox.Show($"Fill all the needed boxes: username, group, user's path, hostname", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+
+
 
         }
 
-       
+
     }
 }

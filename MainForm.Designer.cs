@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            richTextBox1 = new RichTextBox();
+            rtb_commands = new RichTextBox();
             la_user = new Label();
             tb_username = new TextBox();
             la_group = new Label();
@@ -51,10 +51,11 @@
             la_hostFound = new Label();
             SuspendLayout();
             // 
-            // richTextBox1
+            // rtb_commands
             // 
-            resources.ApplyResources(richTextBox1, "richTextBox1");
-            richTextBox1.Name = "richTextBox1";
+            resources.ApplyResources(rtb_commands, "rtb_commands");
+            rtb_commands.Name = "rtb_commands";
+            rtb_commands.ReadOnly = true;
             // 
             // la_user
             // 
@@ -180,7 +181,7 @@
             Controls.Add(tb_group);
             Controls.Add(la_user);
             Controls.Add(tb_username);
-            Controls.Add(richTextBox1);
+            Controls.Add(rtb_commands);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             Name = "MainForm";
@@ -190,7 +191,7 @@
 
         #endregion
 
-        private RichTextBox richTextBox1;
+        private RichTextBox rtb_commands;
         private Label la_user;
         private TextBox tb_username;
         private Label la_group;
