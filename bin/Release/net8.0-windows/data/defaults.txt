@@ -1,3 +1,3 @@
-group=
-home=
-public_keys_dir=
+group=sapsys
+home=/usr/sap/interfaces/SFTP_DIR/
+public_keys_dir=/usr/sap/interfaces/sshkeys/
