@@ -14,10 +14,15 @@ namespace sftp_user_creator
         private static readonly string dataDirectory = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "data");
         private static readonly string hostsFilePath = Path.Combine(dataDirectory, "hosts.txt");
 
+        private string version = "v2.0.1";
+
+
+
         public MainForm(IConfigurationService configService)
         {
             _configService = configService ?? throw new ArgumentNullException(nameof(configService));
             InitializeComponent();
+            la_version.Text = version;
         }
 
         protected override async void OnLoad(EventArgs e)
@@ -72,7 +77,6 @@ namespace sftp_user_creator
 
         bool isHostFound = false;
         private string host;
-
 
 
         private async void tb_hostname_TextChanged(object sender, EventArgs e)
@@ -186,7 +190,6 @@ namespace sftp_user_creator
 
 
         }
-
 
     }
 }

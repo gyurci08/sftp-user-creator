@@ -42,7 +42,7 @@ namespace sftp_user_creator.utils
             commands.Add($"# Password: {password}");
             commands.Add($"# Home dir: {homePath}");
 
-            commands.Add("\n#Directories");
+            commands.Add("\n# Directories");
             foreach (var subdir in subdirectories)
             {;
                 string path = CleanPath($"{homePath}/{subdir}");
@@ -55,16 +55,16 @@ namespace sftp_user_creator.utils
 
             if (!string.IsNullOrWhiteSpace(sshKey))
             {
-                commands.Add("\n#Public-key authentication");
+                commands.Add("\n# Public-key authentication");
                 commands.Add($"mkdir -p {sshPath}");
-                commands.Add($"cat '{sshKey}' >> {authKeyPath}");
+                commands.Add($"echo '{sshKey}' >> {authKeyPath}");
                 commands.Add($"chown -R {username}:{group} {sshHomePath}");
                 commands.Add($"chmod 700 {sshHomePath}");
                 commands.Add($"chmod 644 {authKeyPath}");
             }
 
 
-            commands.Add("\n#Validation");
+            commands.Add("\n# Validation");
             commands.Add($"getent passwd | grep '{username}:' && ll -d {homePath}");
 
             if (!string.IsNullOrWhiteSpace(sshKey))
@@ -73,7 +73,7 @@ namespace sftp_user_creator.utils
                 commands.Add($"grep -q '{sshKey}' {authKeyPath} && echo 'Key found' || echo 'Key not found'");
             }
 
-            commands.Add("\n#Diagnostic");
+            commands.Add("\n# Diagnostic");
             commands.Add($"grep '{username}' /var/log/messages | tail");
             commands.Add($"grep -n1 {username}  "+ "$(ps -ef | grep 'sshd'| grep '\\-E' | grep -v 'grep' | awk '{print $13}' | tail)");
 

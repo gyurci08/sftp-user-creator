@@ -49,6 +49,7 @@
             tb_publicKeyPath = new TextBox();
             tb_foundHost = new TextBox();
             la_hostFound = new Label();
+            la_version = new Label();
             SuspendLayout();
             // 
             // rtb_commands
@@ -158,10 +159,16 @@
             resources.ApplyResources(la_hostFound, "la_hostFound");
             la_hostFound.Name = "la_hostFound";
             // 
+            // la_version
+            // 
+            resources.ApplyResources(la_version, "la_version");
+            la_version.Name = "la_version";
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(la_version);
             Controls.Add(la_hostFound);
             Controls.Add(tb_foundHost);
             Controls.Add(la_publicKeyPath);
@@ -211,5 +218,6 @@
         private TextBox tb_publicKeyPath;
         private TextBox tb_foundHost;
         private Label la_hostFound;
+        private Label la_version;
     }
 }
