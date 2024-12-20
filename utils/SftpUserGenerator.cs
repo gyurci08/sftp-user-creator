@@ -78,9 +78,9 @@ namespace sftp_user_creator.utils
 
             commands.Add("\n# Diagnostic");
             commands.Add($"grep '{username}' /var/log/messages | tail");
-            commands.Add($"grep -n1 {username}  "+ "$(ps -ef | grep 'sshd'| grep '\\-E' | grep -v 'grep' | awk '{print $13}' | tail)");
+            commands.Add($"grep -n1 {username}  " + "$(ps -ef | grep 'sshd'| grep '\\-E' | grep -v 'grep' | awk '{print $13}')  | tail");
 
-                return string.Join("\n", commands);
+            return string.Join("\n", commands);
         }
     }
 
