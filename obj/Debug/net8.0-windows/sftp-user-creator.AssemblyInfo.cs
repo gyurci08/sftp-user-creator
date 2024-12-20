@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("sftp-user-creator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+989525b4569e5cfefdc6a82c91511af23e9e7ce6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("sftp-user-creator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("sftp-user-creator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

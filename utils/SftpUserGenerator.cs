@@ -41,6 +41,9 @@ namespace sftp_user_creator.utils
             commands.Add($"# Username: {username}");
             commands.Add($"# Password: {password}");
             commands.Add($"# Home dir: {homePath}");
+            commands.Add($"groupadd {group}");
+            commands.Add($"useradd -m -d {homePath} -g {group} -s /usr/sbin/nologin {username}");
+            commands.Add($"echo '{username}:{password}' | chpasswd");
 
             commands.Add("\n# Directories");
             foreach (var subdir in subdirectories)
