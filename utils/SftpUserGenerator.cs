@@ -30,18 +30,26 @@ namespace sftp_user_creator.utils
 
             var commands = new List<string>();
 
+            homePath = homePath + $"/{username}";
+
+
+            string sshHomePath = $"{sshKeyPath}/{username}";
+            string sshPath = $"{sshHomePath}/.ssh";
+            string authKeyPath = $"{sshPath}/authorized_keys";
+
+
+
             commands.Add($"# Username: {username}");
             commands.Add($"# Password: {password}");
             commands.Add($"# Home dir: {homePath}");
-            commands.Add($"groupadd {group}");
-            commands.Add($"useradd -m -d {homePath} -g {group} -s /usr/sbin/nologin {username}");
-            commands.Add($"echo '{username}:{password}' | chpasswd");
 
-
+            commands.Add("\n#Directories");
             foreach (var subdir in subdirectories)
             {;
-                commands.Add("");
                 string path = $"{homePath}/{subdir}";
+                CleanPath(path);
+
+                commands.Add("");
                 commands.Add($"mkdir -p {path}");
                 commands.Add($"chown {username}:{group} {path}");
                 commands.Add($"chmod 770 {path}");
@@ -49,15 +57,29 @@ namespace sftp_user_creator.utils
 
             if (!string.IsNullOrWhiteSpace(sshKey))
             {
-                commands.Add("");
-                commands.Add($"mkdir -p {sshKeyPath}/{username}/.ssh");
-                commands.Add($"cat '{sshKey}' >> {sshKeyPath}/{username}/.ssh/authorized_keys");
-                commands.Add($"chown -R {username}:{group} {sshKeyPath}/{username}/.ssh");
-                commands.Add($"chmod 700 {sshKeyPath}/{username}/.ssh");
-                commands.Add($"chmod 644 {sshKeyPath}/{username}/.ssh/authorized_keys");
+                commands.Add("\n#Public-key authentication");
+                commands.Add($"mkdir -p {sshPath}");
+                commands.Add($"cat '{sshKey}' >> {authKeyPath}");
+                commands.Add($"chown -R {username}:{group} {sshHomePath}");
+                commands.Add($"chmod 700 {sshHomePath}");
+                commands.Add($"chmod 644 {authKeyPath}");
             }
 
-            return string.Join("\n", commands);
+
+            commands.Add("\n#Validation");
+            commands.Add($"getent passwd | grep '{username}:' && ll -d {homePath}");
+
+            if (!string.IsNullOrWhiteSpace(sshKey))
+            {
+                commands.Add($"ll -d {authKeyPath}");
+                commands.Add($"grep -q '{sshKey}' {authKeyPath} && echo 'Key found' || echo 'Key not found'");
+            }
+
+            commands.Add("\n#Diagnostic");
+            commands.Add($"grep '{username}' /var/log/messages | tail");
+            commands.Add($"grep -n1 {username}  "+ "$(ps -ef | grep 'sshd'| grep '\\-E' | grep -v 'grep' | awk '{print $13}' | tail)");
+
+                return string.Join("\n", commands);
         }
     }
 
