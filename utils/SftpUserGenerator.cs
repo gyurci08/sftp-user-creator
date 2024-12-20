@@ -32,7 +32,6 @@ namespace sftp_user_creator.utils
 
             homePath = homePath + $"/{username}";
 
-
             string sshHomePath = $"{sshKeyPath}/{username}";
             string sshPath = $"{sshHomePath}/.ssh";
             string authKeyPath = $"{sshPath}/authorized_keys";
@@ -46,8 +45,7 @@ namespace sftp_user_creator.utils
             commands.Add("\n#Directories");
             foreach (var subdir in subdirectories)
             {;
-                string path = $"{homePath}/{subdir}";
-                CleanPath(path);
+                string path = CleanPath($"{homePath}/{subdir}");
 
                 commands.Add("");
                 commands.Add($"mkdir -p {path}");
