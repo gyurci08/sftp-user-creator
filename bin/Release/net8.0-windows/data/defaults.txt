@@ -1,3 +1,0 @@
-group=sapsys
-home=/usr/sap/interfaces/SFTP_DIR/
-public_keys_dir=/usr/sap/interfaces/sshkeys/
